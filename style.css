@@ -1,0 +1,455 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;  
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+    position: relative;
+    font-size: 30px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+.b-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.b-section div.background-section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.b-section div.background-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.b-section div.box{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient();
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.605) 00001%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.b-section div.box .conteudo{
+    width: 500px;
+    color: white;
+
+}
+
+.b-section div.box img{
+    width: 300px;
+    color: white;
+    box-shadow: black;
+
+}
+
+.b-section div.box p{
+    color: white;
+    font-size: 40px;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    width: 800px;
+    text-shadow: black;
+    box-shadow: black;
+
+}
+
+.sec-2 {
+    color: white;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .sec-2 .itens {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    background-color: #181818;
+    padding: 100px;
+    margin: 50px 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    border-radius: 16px;
+    
+  }
+  
+  .sec-2 img {
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .sec-2 p {
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: left;
+    box-shadow: black;
+  }
+
+  .text-bt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;    
+  }
+
+
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-bottom: 60px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 400px;
+  height: 100px;
+}
+
+.cards{
+    background: linear-gradient(to bottom, #000000 0%, #1a1a1a 40%, #292929 100%);
+
+
+    padding: 10px;
+}
+
+article {
+    --img-scale: 1.001;
+    --title-color: white;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #181818;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  article p {
+    color: white;
+  }
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  article a:focus {
+    outline: 1px dotted white;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: white;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+ 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  
+ 
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+  .sec-aniversario {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    height: 600px;
+  }
+  
+  .sec-aniversario .conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .sec-aniversario h2 {
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 4.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .sec-aniversario p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .sec-aniversario .btn-saiba-mais {
+    padding: 12px 25px;
+    background-color: #181818;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sec-aniversario .btn-saiba-mais:hover {
+    background-color: black;
+  }
+  
+  .sec-arquitetura {
+    background-color: white;
+    color: #fff;
+    padding: 80px 20px;
+  }
+  
+  .container-arquitetura {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .container-arquitetura .texto {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .container-arquitetura .texto h2 {
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: #181818;
+  }
+  
+  .container-arquitetura .texto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #515151;
+  }
+  
+  .container-arquitetura .btn-destaque {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #181818;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .container-arquitetura .btn-destaque:hover {
+    background-color: #181818;
+  }
+  
+  .container-arquitetura .imagem {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .container-arquitetura .imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  .rodape {
+    background-color: #181818;
+    color: #ccc;
+    padding: 30px 20px;
+    font-family: sans-serif;
+  }
+  
+  .rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  
+  .rodape p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .rodape-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .rodape-links li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+  }
+  
+  .rodape-links li a:hover {
+    color: white;
+  }
+  
+  
+  
+
+ 
